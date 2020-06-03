@@ -23,9 +23,10 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/users/{id}/{name}',function($id,$name){
 //     return 'this is user '.$name.' with is'.$id;
 // });
- Route::get('/about', function() {
-    return view('pages.about');
- });
+//  Route::get('/about', function() {
+//     return view('pages.about');
+//  });
 
  Route::get('/','Pagescontroller@index');
+ Router::get('/about','PagesController@about');
 

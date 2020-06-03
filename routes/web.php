@@ -28,6 +28,6 @@ use Illuminate\Support\Facades\Route;
 //  });
 
  Route::get('/','Pagescontroller@index');
- Router::get('/about','PagesController@about');
- Router::get('/services','PagesController@services');
+ Route::get('/about','PagesController@about');
+ Route::get('/services','PagesController@services');
 

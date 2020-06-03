@@ -20,10 +20,10 @@ Route::get('/', function () {
 // Route::get('/hello', function () {
 //     return 'hello world';
 // });
+// Route::get('/users/{id}/{name}',function($id,$name){
+//     return 'this is user '.$name.' with is'.$id;
+// });
  Route::get('/about', function() {
     return view('pages.about');
  });
 
- Route::get('/users/{id}/{name}',function($id,$name){
-     return 'this is user '.$name.' with is'.$id;
- });

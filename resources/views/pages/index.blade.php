@@ -3,12 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{config('app.name','LSAPP')}}</title>
-
-       
-        
+        <title>{{config('app.name','LSAPP')}}</title>     
     </head>
     <body>
-        
+       <h1> Welcome to laravel</h1>
+       <p> this is the index file </p>
     </body>
 </html>

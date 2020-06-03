@@ -24,6 +24,6 @@ Route::get('/', function () {
     return view('pages.about');
  });
 
- Route::get('/users/{id}',function($id){
-     return 'this is user '.$id;
+ Route::get('/users/{id}/{name}',function($id,$name){
+     return 'this is user '.$name.' with is'.$id;
  });

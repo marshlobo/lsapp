@@ -1,7 +1,12 @@
 @extends('layouts.app')
 @section('content')
 <h1> {{$title}}</h1>
-<p> this is the services file </p>   
+<ul>
+    @if (count($services))
+        @foreach ($services as $item)
+        <li>{{$item}}</li>            
+        @endforeach
+    @endif  
 @endsection
    
 

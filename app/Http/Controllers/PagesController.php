@@ -16,7 +16,10 @@ class PagesController extends Controller
         return view('pages.about')->with('title',$title);
     }
     public function services(){
-        $title = 'Welcome it me Services';
-        return view('pages.services')->with('title',$title);
+        $data = array(
+                'title' => 'Services',
+                'services' => ['web','programing','game']
+        );
+        return view('pages.services')->with($data);
     }
 }

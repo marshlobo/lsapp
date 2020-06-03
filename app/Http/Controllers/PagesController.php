@@ -12,9 +12,11 @@ class PagesController extends Controller
         return view('pages.index')->with('title',$title);
     }
     public function about(){
-        return view('pages.about');
+        $title = 'Welcome its me About';
+        return view('pages.about')->with('title',$title);
     }
     public function services(){
-        return view('pages.services');
+        $title = 'Welcome it me Services';
+        return view('pages.services')->with('title',$title);
     }
 }
